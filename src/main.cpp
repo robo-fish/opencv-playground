@@ -8,8 +8,9 @@
 #include <iostream>
 
 #include "main_options.hpp"
+#include "feature_detectors.hpp"
+#include "filters.hpp"
 #include "line_detector.hpp"
-#include "other_detectors.hpp"
 #include "preprocessing.hpp"
 #include "utils.hpp"
 
@@ -22,17 +23,21 @@ void detectLine(cv::Mat image, vector<cv::KeyPoint> & result)
   image = extractChannel(image, robofish::Channel::blue);
   normalizeIntensity(image);
 
-  seavision::LineDetector detector;
+  robofish::LineDetector detector;
   detector.detect(image,result);
 }
 
-static cv::Mat loadImageFromPath(boost::filesystem::path path)
+static cv::Mat loadImageFromPath(boost::filesystem::path imagePath)
 {
   cv::Mat image;
-  if (!path.empty())
+  if (!imagePath.empty())
   {
-    image = cv::imread(path.string(), cv::IMREAD_UNCHANGED);
-    if(!image.empty())
+    image = cv::imread(imagePath.string(), cv::IMREAD_UNCHANGED);
+    if(image.empty())
+    {
+      debugOut() << "Failed to load image from file at " << imagePath << endl;
+    }
+    else
     {
       debugOut() << "loaded " << image.size() << " type " << image.type() << endl;
     }
@@ -45,7 +50,6 @@ void runFeatureDetection(uint8_t detectionType, boost::filesystem::path imagePat
   cv::Mat image = loadImageFromPath(imagePath);
   if ( image.empty() )
   {
-    debugOut() << "Failed to load image from file at " << imagePath << endl;
     return;
   }
   vector<cv::KeyPoint> result;
@@ -58,6 +62,21 @@ void runFeatureDetection(uint8_t detectionType, boost::filesystem::path imagePat
   cv::waitKey(-10);
 }
 
+void runFiltering(uint8_t filterType, boost::filesystem::path imagePath)
+{
+  cv::Mat image = loadImageFromPath(imagePath);
+  if (image.empty())
+  {
+    return;
+  }
+  cv::Mat result;
+  filter(filterType, image, result);
+
+  cv::imshow("original", image);
+  cv::imshow("filtered", result);
+  cv::waitKey(-10);
+}
+
 int main(int argc, char**argv)
 {
   auto input = processInput(argc, argv);
@@ -66,6 +85,9 @@ int main(int argc, char**argv)
   {
     case Task::FeatureDetection:
       runFeatureDetection(get<1>(input), get<2>(input));
+      break;
+    case Task::Filtering:
+      runFiltering(get<1>(input), get<2>(input));
       break;
     default:
       break;

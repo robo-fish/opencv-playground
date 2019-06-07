@@ -5,12 +5,12 @@
 //  Created by Kai Oezer on 28.03.19.
 //
 #include <iostream>
-#include <boost/algorithm/string/predicate.hpp>
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdocumentation"
 #pragma GCC diagnostic ignored "-Wcomma"
 #include <boost/program_options.hpp>
+#include <boost/algorithm/string/predicate.hpp>
 #pragma GCC diagnostic pop
 
 #include "main_options.hpp"
@@ -36,6 +36,10 @@ PlaygroundInput processInput(int argc, char** argv)
       "task,t",
       po::value<string>(),
       "The task to execute. You can specify one of the following:\n\n"
+      "Filters\n"
+      "   filt-median (Median)\n"
+      "   filt-sobel (Sobel)\n"
+      "\n"
       "Feature detection tasks:\n"
       "   fd-shi-tomasi (Shi-Thomasi)\n"
       "   fd-sift (SIFT)\n"
@@ -83,10 +87,10 @@ PlaygroundInput processInput(int argc, char** argv)
     const string val_Task = ( (vm.count(key_Task) > 0) && !vm[key_Task].empty() && (vm[key_Task].value().type() == typeid(string))) ? vm[key_Task].as<string>() : "";
     static const string key_Media{"media"};
     const string val_Media = ( (vm.count(key_Media) > 0) && !vm[key_Media].empty() && (vm[key_Media].value().type() == typeid(string)) ) ? vm[key_Media].as<string>() : "";
-    static const string key_Option{"option"};
-    int val_Option = ( (vm.count(key_Option) > 0) && !vm[key_Option].empty() && (vm[key_Option].value().type() == typeid(int)) ) ? vm[key_Option].as<int>() : -1;
+    //static const string key_Option{"option"};
+    //int val_Option = ( (vm.count(key_Option) > 0) && !vm[key_Option].empty() && (vm[key_Option].value().type() == typeid(int)) ) ? vm[key_Option].as<int>() : -1;
 
-    if ( boost::algorithm::starts_with(val_Task,"fd-") && !val_Media.empty())
+    if ( boost::algorithm::starts_with(val_Task, "fd-") && !val_Media.empty())
     {
       const int detector = [val_Task] ()->int {
         string const strDetector = val_Task.substr(strlen("fd-"));
@@ -103,8 +107,17 @@ PlaygroundInput processInput(int argc, char** argv)
         if (strDetector == "akaze") return 10;
         return -1;
       }();
-
       result = make_tuple(Task::FeatureDetection, detector, fs::path(val_Media));
+    }
+    else if ( boost::algorithm::starts_with(val_Task, "filt-") )
+    {
+      const int option = [val_Task] ()->int {
+        string const strInteraction = val_Task.substr(strlen("filt-"));
+        if (strInteraction == "sobel") return 0;
+        if (strInteraction == "median") return 1;
+        return -1;
+      }();
+      result = make_tuple(Task::Filtering, option, fs::path());
     }
 
   }

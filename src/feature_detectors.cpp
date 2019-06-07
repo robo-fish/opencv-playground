@@ -1,11 +1,11 @@
 //
-//  other_detectors.cpp
+//  feature_detectors.cpp
 //  opencv-playground
 //
 //  Created by Kai Oezer on 6/30/18.
 //
 
-#include "other_detectors.hpp"
+#include "feature_detectors.hpp"
 
 #define DISABLE_OPENCV_24_COMPATIBILITY
 

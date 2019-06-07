@@ -21,6 +21,7 @@ enum class Task
 {
   None,
   FeatureDetection,
+  Filtering,
 };
 
 using TaskOption = int;

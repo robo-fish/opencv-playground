@@ -16,7 +16,7 @@
 
 #include "preprocessing.hpp"
 #include "line_detector.hpp"
-#include "other_detectors.hpp"
+#include "feature_detectors.hpp"
 
 using namespace std;
 

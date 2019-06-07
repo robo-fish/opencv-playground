@@ -7,6 +7,6 @@ include_directories(SYSTEM ${OpenCV_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 link_directories(${OpenCV_LIBRARY_DIRS} ${Boost_LIBRARY_DIRS})
 add_definitions(${OpenCV_CFLAGS_OTHER} ${Boost_CFLAGS_OTHER})
 
-add_executable(opencv-playground main.cpp main_options.cpp preprocessing.cpp line_detector.cpp other_detectors.cpp utils.cpp)
+add_executable(opencv-playground main.cpp main_options.cpp preprocessing.cpp line_detector.cpp feature_detectors.cpp utils.cpp filters.cpp)
 target_link_libraries(opencv-playground ${OpenCV_LIBRARIES} ${Boost_LIBRARIES})
 

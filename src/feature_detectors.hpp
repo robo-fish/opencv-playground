@@ -1,5 +1,5 @@
 //
-//  other_detectors.hpp
+//  feature_detectors.hpp
 //  opencv-playground
 //
 //  Created by Kai Oezer on 6/30/18.

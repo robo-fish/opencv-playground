@@ -9,7 +9,7 @@
 #include <memory>
 #include <functional>
 
-namespace seavision
+namespace robofish
 {
   class CV_EXPORTS_W LineDetector : public cv::FeatureDetector
   {

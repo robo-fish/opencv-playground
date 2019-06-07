@@ -35,7 +35,7 @@
 
 using namespace std;
 
-namespace seavision {
+namespace robofish {
 
 LineDetector::Parameters LineDetector::defaultParameters = {4, WindowSize::px5, 240, 0.9f, 0.3f, 150.0f, 2, 10.0f, 2.0f};
 
