@@ -134,7 +134,7 @@ struct LineDetector::Impl
     static Point2i const peripherals_7x7[] = { {3,6}, {2,6}, {1,5}, {0,4}, {0,3}, {0,2}, {1,1}, {2,0}, {3,0}, {4,0}, {5,1}, {6,2}, {6,3}, {6,4}, {5,5}, {4,6} };
     static int values_7x7[] = { 0,0,0,0,  0,0,0,0,  0,0,0,0,  0,0,0,0 };
     Point2i const * const peripheralPoints = is5x5 ? peripherals_5x5 : peripherals_7x7;
-    size_t const numPoints = sizeof(peripheralPoints) / sizeof(Point2i);
+    size_t const numPoints = (is5x5 ? sizeof(peripherals_5x5) : sizeof(peripherals_7x7)) / sizeof(Point2i);
     //int const minimumZoneLength = is5x5 ? 2 : 3;
     int* values = is5x5 ? values_5x5 : values_7x7;
     Point2i const centerPoint = is5x5 ? Point2i(2,2) : Point2i(3,3);

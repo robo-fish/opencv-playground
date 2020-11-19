@@ -43,7 +43,7 @@ static void findSIFTKeypoints(Mat input, std::vector<KeyPoint> & keyPoints)
   double contrastThreshold = 0.10;
   double edgeThreshold = 12;
   double sigma = 1.6;
-  auto detector = xfeatures2d::SiftFeatureDetector::create(nFeatures, nOctaveLayers, contrastThreshold, edgeThreshold, sigma);
+  auto detector = cv::SiftFeatureDetector::create(nFeatures, nOctaveLayers, contrastThreshold, edgeThreshold, sigma);
   detector->detect(input, keyPoints);
 }
 

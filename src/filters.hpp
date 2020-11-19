@@ -7,7 +7,10 @@
 
 #pragma once
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdocumentation"
 #include <opencv2/core.hpp>
+#pragma GCC diagnostic pop
 
 namespace robofish {
 

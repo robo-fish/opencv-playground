@@ -67,7 +67,7 @@ static int kMaxNumberOfPointsToDraw = 400;
 
 - (void) _drawFeaturePoints
 {
-  CGContextRef context = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+	CGContextRef context = [[NSGraphicsContext currentContext] CGContext];
   CGContextSaveGState(context);
   static CGFloat const sideDim = 6.0;
   static CGFloat const Pi2 = 6.28318531;

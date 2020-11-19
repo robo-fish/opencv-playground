@@ -1,12 +1,12 @@
 This repository contains the sources for an OpenCV test application for macOS and Ubuntu 18.04
 
 macOS Requirements:
-* Xcode 11 with Command Line Tools
+* Xcode 12 with Command Line Tools
 * Homebrew (visit https://brew.sh)
-* OpenCV 4.1 (via Homebrew)
+* OpenCV 4.1 or newer (via Homebrew)
     header search path: /usr/local/include/opencv4
     library search path: usr/local/lib
-* Boost 1.69.0 (via Homebrew)
+* Boost 1.69.0 or newer (via Homebrew)
 
 
 Ubuntu requirements
