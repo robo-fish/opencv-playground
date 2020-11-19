@@ -40,8 +40,6 @@
   NSData *imageData = image.TIFFRepresentation;
   CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)imageData, NULL);
   CGImageRef result = CGImageSourceCreateImageAtIndex(source, 0, NULL);
-  assert(CGImageGetWidth(result) == image.size.width);
-  assert(CGImageGetHeight(result) == image.size.height);
   return result;
 }
 

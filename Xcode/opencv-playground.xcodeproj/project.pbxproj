@@ -7,15 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A394EF420D6B99500DC55FC /* FLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A394EF320D6B99500DC55FC /* FLImageView.m */; };
-		2A394EF720D8D79400DC55FC /* FLImageUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A394EF620D8D79400DC55FC /* FLImageUtilities.mm */; };
 		2A5955CC20D1D4F3003A3E71 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955BE20D1D411003A3E71 /* main.cpp */; };
 		2A5955CD20D1D4F3003A3E71 /* preprocessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955BF20D1D411003A3E71 /* preprocessing.cpp */; };
-		2A5955E220D2568E003A3E71 /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955E120D2568E003A3E71 /* FLAppDelegate.m */; };
-		2A5955E520D2568E003A3E71 /* FLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955E420D2568E003A3E71 /* FLViewController.mm */; };
-		2A5955E720D2568F003A3E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5955E620D2568F003A3E71 /* Assets.xcassets */; };
-		2A5955EA20D2568F003A3E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5955E820D2568F003A3E71 /* Main.storyboard */; };
-		2A5955ED20D2568F003A3E71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955EC20D2568F003A3E71 /* main.m */; };
 		2AA25F4925665F39007005D8 /* libopencv_features2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4825665F39007005D8 /* libopencv_features2d.dylib */; };
 		2AA25F4B25665F52007005D8 /* libopencv_highgui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4A25665F52007005D8 /* libopencv_highgui.dylib */; };
 		2AA25F4D25665F64007005D8 /* libopencv_imgcodecs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4C25665F64007005D8 /* libopencv_imgcodecs.dylib */; };
@@ -23,24 +16,36 @@
 		2AA25F5125665F8F007005D8 /* libopencv_imgproc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5025665F8F007005D8 /* libopencv_imgproc.dylib */; };
 		2AA25F5325665FA0007005D8 /* libopencv_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5225665FA0007005D8 /* libopencv_core.dylib */; };
 		2AA25F5525665FBF007005D8 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5425665FBF007005D8 /* libboost_program_options.dylib */; };
-		2AA25F5825666086007005D8 /* libopencv_highgui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4A25665F52007005D8 /* libopencv_highgui.dylib */; };
-		2AA25F5925666086007005D8 /* libopencv_imgcodecs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4C25665F64007005D8 /* libopencv_imgcodecs.dylib */; };
-		2AA25F5A25666086007005D8 /* libopencv_imgproc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5025665F8F007005D8 /* libopencv_imgproc.dylib */; };
-		2AA25F5B25666086007005D8 /* libopencv_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5225665FA0007005D8 /* libopencv_core.dylib */; };
-		2AA25F5C25666086007005D8 /* libopencv_features2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4825665F39007005D8 /* libopencv_features2d.dylib */; };
-		2AA25F5D25666086007005D8 /* libopencv_xfeatures2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4E25665F7B007005D8 /* libopencv_xfeatures2d.dylib */; };
-		2AADA6F020D5367800A33DF2 /* FLInformationOverlayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AADA6EF20D5367800A33DF2 /* FLInformationOverlayView.mm */; };
+		2AA25F882567132D007005D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA25F872567132D007005D8 /* AppDelegate.swift */; };
+		2AA25F8A2567132D007005D8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA25F892567132D007005D8 /* MainView.swift */; };
+		2AA25F8C2567132F007005D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA25F8B2567132F007005D8 /* Assets.xcassets */; };
+		2AA25F8F2567132F007005D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA25F8E2567132F007005D8 /* Preview Assets.xcassets */; };
+		2AA25F922567132F007005D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA25F902567132F007005D8 /* Main.storyboard */; };
+		2AA25F9F256715EE007005D8 /* FeatureLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA25F9E256715EE007005D8 /* FeatureLabView.swift */; };
+		2AA25FAD256718B1007005D8 /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955E120D2568E003A3E71 /* FLAppDelegate.m */; };
+		2AA25FAE256718B1007005D8 /* FLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955E420D2568E003A3E71 /* FLViewController.mm */; };
+		2AA25FAF256718B1007005D8 /* FLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A394EF320D6B99500DC55FC /* FLImageView.m */; };
+		2AA25FB0256718B1007005D8 /* FLImageUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A394EF620D8D79400DC55FC /* FLImageUtilities.mm */; };
+		2AA25FB1256718B1007005D8 /* FLInformationOverlayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2AADA6EF20D5367800A33DF2 /* FLInformationOverlayView.mm */; };
+		2AA25FBB25671F06007005D8 /* libopencv_highgui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4A25665F52007005D8 /* libopencv_highgui.dylib */; };
+		2AA25FBC25671F06007005D8 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5425665FBF007005D8 /* libboost_program_options.dylib */; };
+		2AA25FBD25671F06007005D8 /* libopencv_imgproc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5025665F8F007005D8 /* libopencv_imgproc.dylib */; };
+		2AA25FBE25671F07007005D8 /* libopencv_features2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4825665F39007005D8 /* libopencv_features2d.dylib */; };
+		2AA25FBF25671F07007005D8 /* libopencv_core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F5225665FA0007005D8 /* libopencv_core.dylib */; };
+		2AA25FC025671F07007005D8 /* libopencv_imgcodecs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4C25665F64007005D8 /* libopencv_imgcodecs.dylib */; };
+		2AA25FC125671F07007005D8 /* libopencv_xfeatures2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA25F4E25665F7B007005D8 /* libopencv_xfeatures2d.dylib */; };
+		2AA25FC925672017007005D8 /* main_options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A5DE224CDDD60015CF1B /* main_options.cpp */; };
+		2AA25FCA25672017007005D8 /* line_detector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE106020D2FEBE00760929 /* line_detector.cpp */; };
+		2AA25FCB25672017007005D8 /* preprocessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955BF20D1D411003A3E71 /* preprocessing.cpp */; };
+		2AA25FCC25672017007005D8 /* filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC599A22AAEB6800B158BC /* filters.cpp */; };
+		2AA25FCD25672017007005D8 /* feature_detectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAD81F20E7F76700CADF08 /* feature_detectors.cpp */; };
+		2AA25FCE25672017007005D8 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A5E4224D0CB40015CF1B /* utils.cpp */; };
+		2AA25FD3256720E1007005D8 /* FeatureLab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5955E820D2568F003A3E71 /* FeatureLab.storyboard */; };
 		2AB5A5E0224CDDD60015CF1B /* main_options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A5DE224CDDD60015CF1B /* main_options.cpp */; };
 		2AB5A5E6224D0CB40015CF1B /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A5E4224D0CB40015CF1B /* utils.cpp */; };
-		2ABAD81A20E7E7D500CADF08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABAD81920E7E7D400CADF08 /* CoreGraphics.framework */; };
-		2ABAD81C20E7E7F500CADF08 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABAD81B20E7E7F500CADF08 /* Cocoa.framework */; };
 		2ABAD82120E7F76700CADF08 /* feature_detectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAD81F20E7F76700CADF08 /* feature_detectors.cpp */; };
-		2ABAD82220E7F76700CADF08 /* feature_detectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAD81F20E7F76700CADF08 /* feature_detectors.cpp */; };
 		2ADE106120D2FEBE00760929 /* line_detector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE106020D2FEBE00760929 /* line_detector.cpp */; };
-		2ADE106220D2FEBE00760929 /* line_detector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE106020D2FEBE00760929 /* line_detector.cpp */; };
-		2ADE106320D39C0C00760929 /* preprocessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A5955BF20D1D411003A3E71 /* preprocessing.cpp */; };
 		2AEC599B22AAEB6900B158BC /* filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC599A22AAEB6800B158BC /* filters.cpp */; };
-		2AEC599C22AAEB7200B158BC /* filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC599A22AAEB6800B158BC /* filters.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,16 +70,11 @@
 		2A5955BE20D1D411003A3E71 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
 		2A5955BF20D1D411003A3E71 /* preprocessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = preprocessing.cpp; path = ../src/preprocessing.cpp; sourceTree = "<group>"; };
 		2A5955C420D1D4DF003A3E71 /* CV-Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CV-Playground"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A5955DE20D2568D003A3E71 /* Feature Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feature Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5955E020D2568E003A3E71 /* FLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAppDelegate.h; sourceTree = "<group>"; };
 		2A5955E120D2568E003A3E71 /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
 		2A5955E320D2568E003A3E71 /* FLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewController.h; sourceTree = "<group>"; };
 		2A5955E420D2568E003A3E71 /* FLViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FLViewController.mm; sourceTree = "<group>"; };
-		2A5955E620D2568F003A3E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A5955E920D2568F003A3E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A5955EB20D2568F003A3E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A5955EC20D2568F003A3E71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A5955EE20D2568F003A3E71 /* FeatureLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeatureLab.entitlements; sourceTree = "<group>"; };
+		2A5955E920D2568F003A3E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FeatureLab.storyboard; sourceTree = "<group>"; };
 		2AA25F4825665F39007005D8 /* libopencv_features2d.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.dylib; path = ../../../../../usr/local/lib/libopencv_features2d.dylib; sourceTree = "<group>"; };
 		2AA25F4A25665F52007005D8 /* libopencv_highgui.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.dylib; path = ../../../../../usr/local/lib/libopencv_highgui.dylib; sourceTree = "<group>"; };
 		2AA25F4C25665F64007005D8 /* libopencv_imgcodecs.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.dylib; path = ../../../../../usr/local/lib/libopencv_imgcodecs.dylib; sourceTree = "<group>"; };
@@ -82,6 +82,16 @@
 		2AA25F5025665F8F007005D8 /* libopencv_imgproc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.dylib; path = ../../../../../usr/local/lib/libopencv_imgproc.dylib; sourceTree = "<group>"; };
 		2AA25F5225665FA0007005D8 /* libopencv_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.dylib; path = ../../../../../usr/local/lib/libopencv_core.dylib; sourceTree = "<group>"; };
 		2AA25F5425665FBF007005D8 /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = ../../../../../usr/local/lib/libboost_program_options.dylib; sourceTree = "<group>"; };
+		2AA25F852567132D007005D8 /* Vision Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA25F872567132D007005D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AA25F892567132D007005D8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2AA25F8B2567132F007005D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AA25F8E2567132F007005D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AA25F912567132F007005D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AA25F932567132F007005D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA25F942567132F007005D8 /* Vision_Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vision_Playground.entitlements; sourceTree = "<group>"; };
+		2AA25F9E256715EE007005D8 /* FeatureLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureLabView.swift; sourceTree = "<group>"; };
+		2AA25FB4256719BE007005D8 /* ObjC-to-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-to-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		2AADA6EE20D5367800A33DF2 /* FLInformationOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLInformationOverlayView.h; sourceTree = "<group>"; };
 		2AADA6EF20D5367800A33DF2 /* FLInformationOverlayView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FLInformationOverlayView.mm; sourceTree = "<group>"; };
 		2AB5A5DE224CDDD60015CF1B /* main_options.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main_options.cpp; path = ../src/main_options.cpp; sourceTree = "<group>"; };
@@ -89,8 +99,6 @@
 		2AB5A5E4224D0CB40015CF1B /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = ../src/utils.cpp; sourceTree = "<group>"; };
 		2AB5A5E5224D0CB40015CF1B /* utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = utils.hpp; path = ../src/utils.hpp; sourceTree = "<group>"; };
 		2ABAD81520E4D30500CADF08 /* playground_types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = playground_types.hpp; path = ../src/playground_types.hpp; sourceTree = "<group>"; };
-		2ABAD81920E7E7D400CADF08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2ABAD81B20E7E7F500CADF08 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2ABAD81F20E7F76700CADF08 /* feature_detectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = feature_detectors.cpp; path = ../src/feature_detectors.cpp; sourceTree = "<group>"; };
 		2ABAD82020E7F76700CADF08 /* feature_detectors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = feature_detectors.hpp; path = ../src/feature_detectors.hpp; sourceTree = "<group>"; };
 		2ADE106020D2FEBE00760929 /* line_detector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = line_detector.cpp; path = ../src/line_detector.cpp; sourceTree = "<group>"; };
@@ -114,18 +122,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A5955DB20D2568D003A3E71 /* Frameworks */ = {
+		2AA25F822567132D007005D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ABAD81C20E7E7F500CADF08 /* Cocoa.framework in Frameworks */,
-				2ABAD81A20E7E7D500CADF08 /* CoreGraphics.framework in Frameworks */,
-				2AA25F5925666086007005D8 /* libopencv_imgcodecs.dylib in Frameworks */,
-				2AA25F5D25666086007005D8 /* libopencv_xfeatures2d.dylib in Frameworks */,
-				2AA25F5C25666086007005D8 /* libopencv_features2d.dylib in Frameworks */,
-				2AA25F5A25666086007005D8 /* libopencv_imgproc.dylib in Frameworks */,
-				2AA25F5B25666086007005D8 /* libopencv_core.dylib in Frameworks */,
-				2AA25F5825666086007005D8 /* libopencv_highgui.dylib in Frameworks */,
+				2AA25FBD25671F06007005D8 /* libopencv_imgproc.dylib in Frameworks */,
+				2AA25FBF25671F07007005D8 /* libopencv_core.dylib in Frameworks */,
+				2AA25FBC25671F06007005D8 /* libboost_program_options.dylib in Frameworks */,
+				2AA25FBE25671F07007005D8 /* libopencv_features2d.dylib in Frameworks */,
+				2AA25FC025671F07007005D8 /* libopencv_imgcodecs.dylib in Frameworks */,
+				2AA25FBB25671F06007005D8 /* libopencv_highgui.dylib in Frameworks */,
+				2AA25FC125671F07007005D8 /* libopencv_xfeatures2d.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2A5955C420D1D4DF003A3E71 /* CV-Playground */,
-				2A5955DE20D2568D003A3E71 /* Feature Lab.app */,
+				2AA25F852567132D007005D8 /* Vision Playground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,8 +158,6 @@
 				2AA25F5425665FBF007005D8 /* libboost_program_options.dylib */,
 				2AA25F5025665F8F007005D8 /* libopencv_imgproc.dylib */,
 				2AA25F5225665FA0007005D8 /* libopencv_core.dylib */,
-				2ABAD81B20E7E7F500CADF08 /* Cocoa.framework */,
-				2ABAD81920E7E7D400CADF08 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,6 +165,8 @@
 		2A5955DF20D2568D003A3E71 /* FeatureLab */ = {
 			isa = PBXGroup;
 			children = (
+				2AA25F9E256715EE007005D8 /* FeatureLabView.swift */,
+				2A5955E820D2568F003A3E71 /* FeatureLab.storyboard */,
 				2A5955E020D2568E003A3E71 /* FLAppDelegate.h */,
 				2A5955E120D2568E003A3E71 /* FLAppDelegate.m */,
 				2A394EF520D8D79400DC55FC /* FLImageUtilities.h */,
@@ -170,13 +177,32 @@
 				2AADA6EF20D5367800A33DF2 /* FLInformationOverlayView.mm */,
 				2A5955E320D2568E003A3E71 /* FLViewController.h */,
 				2A5955E420D2568E003A3E71 /* FLViewController.mm */,
-				2A5955E620D2568F003A3E71 /* Assets.xcassets */,
-				2A5955E820D2568F003A3E71 /* Main.storyboard */,
-				2A5955EB20D2568F003A3E71 /* Info.plist */,
-				2A5955EC20D2568F003A3E71 /* main.m */,
-				2A5955EE20D2568F003A3E71 /* FeatureLab.entitlements */,
 			);
 			path = FeatureLab;
+			sourceTree = "<group>";
+		};
+		2AA25F862567132D007005D8 /* Vision Playground */ = {
+			isa = PBXGroup;
+			children = (
+				2A5955DF20D2568D003A3E71 /* FeatureLab */,
+				2AA25F872567132D007005D8 /* AppDelegate.swift */,
+				2AA25F892567132D007005D8 /* MainView.swift */,
+				2AA25F902567132F007005D8 /* Main.storyboard */,
+				2AA25F8B2567132F007005D8 /* Assets.xcassets */,
+				2AA25F932567132F007005D8 /* Info.plist */,
+				2AA25F942567132F007005D8 /* Vision_Playground.entitlements */,
+				2AA25F8D2567132F007005D8 /* Preview Content */,
+				2AA25FB4256719BE007005D8 /* ObjC-to-Swift-Bridging-Header.h */,
+			);
+			path = "Vision Playground";
+			sourceTree = "<group>";
+		};
+		2AA25F8D2567132F007005D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2AA25F8E2567132F007005D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		2ACB171A20D1D23900B87C6C = {
@@ -196,8 +222,8 @@
 				2A5955BD20D1D411003A3E71 /* preprocessing.hpp */,
 				2AB5A5E4224D0CB40015CF1B /* utils.cpp */,
 				2AB5A5E5224D0CB40015CF1B /* utils.hpp */,
-				2A5955DF20D2568D003A3E71 /* FeatureLab */,
 				2AEC599D22AAEBE500B158BC /* Readme.md */,
+				2AA25F862567132D007005D8 /* Vision Playground */,
 				2A5955C520D1D4DF003A3E71 /* Products */,
 				2A5955CF20D1D70C003A3E71 /* Frameworks */,
 			);
@@ -223,21 +249,21 @@
 			productReference = 2A5955C420D1D4DF003A3E71 /* CV-Playground */;
 			productType = "com.apple.product-type.tool";
 		};
-		2A5955DD20D2568D003A3E71 /* FeatureLab */ = {
+		2AA25F842567132D007005D8 /* Vision Playground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A5955EF20D2568F003A3E71 /* Build configuration list for PBXNativeTarget "FeatureLab" */;
+			buildConfigurationList = 2AA25F972567132F007005D8 /* Build configuration list for PBXNativeTarget "Vision Playground" */;
 			buildPhases = (
-				2A5955DA20D2568D003A3E71 /* Sources */,
-				2A5955DB20D2568D003A3E71 /* Frameworks */,
-				2A5955DC20D2568D003A3E71 /* Resources */,
+				2AA25F812567132D007005D8 /* Sources */,
+				2AA25F822567132D007005D8 /* Frameworks */,
+				2AA25F832567132D007005D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FeatureLab;
-			productName = FeatureLab;
-			productReference = 2A5955DE20D2568D003A3E71 /* Feature Lab.app */;
+			name = "Vision Playground";
+			productName = "Vision Playground";
+			productReference = 2AA25F852567132D007005D8 /* Vision Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -253,9 +279,8 @@
 					2A5955C320D1D4DF003A3E71 = {
 						CreatedOnToolsVersion = 9.4;
 					};
-					2A5955DD20D2568D003A3E71 = {
-						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 0940;
+					2AA25F842567132D007005D8 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -273,18 +298,20 @@
 			projectRoot = "";
 			targets = (
 				2A5955C320D1D4DF003A3E71 /* CV-Playground */,
-				2A5955DD20D2568D003A3E71 /* FeatureLab */,
+				2AA25F842567132D007005D8 /* Vision Playground */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2A5955DC20D2568D003A3E71 /* Resources */ = {
+		2AA25F832567132D007005D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5955E720D2568F003A3E71 /* Assets.xcassets in Resources */,
-				2A5955EA20D2568F003A3E71 /* Main.storyboard in Resources */,
+				2AA25F922567132F007005D8 /* Main.storyboard in Resources */,
+				2AA25F8F2567132F007005D8 /* Preview Assets.xcassets in Resources */,
+				2AA25F8C2567132F007005D8 /* Assets.xcassets in Resources */,
+				2AA25FD3256720E1007005D8 /* FeatureLab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,30 +332,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A5955DA20D2568D003A3E71 /* Sources */ = {
+		2AA25F812567132D007005D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADE106320D39C0C00760929 /* preprocessing.cpp in Sources */,
-				2ABAD82220E7F76700CADF08 /* feature_detectors.cpp in Sources */,
-				2ADE106220D2FEBE00760929 /* line_detector.cpp in Sources */,
-				2A5955ED20D2568F003A3E71 /* main.m in Sources */,
-				2A5955E220D2568E003A3E71 /* FLAppDelegate.m in Sources */,
-				2AADA6F020D5367800A33DF2 /* FLInformationOverlayView.mm in Sources */,
-				2AEC599C22AAEB7200B158BC /* filters.cpp in Sources */,
-				2A394EF720D8D79400DC55FC /* FLImageUtilities.mm in Sources */,
-				2A394EF420D6B99500DC55FC /* FLImageView.m in Sources */,
-				2A5955E520D2568E003A3E71 /* FLViewController.mm in Sources */,
+				2AA25FB1256718B1007005D8 /* FLInformationOverlayView.mm in Sources */,
+				2AA25FCC25672017007005D8 /* filters.cpp in Sources */,
+				2AA25FAF256718B1007005D8 /* FLImageView.m in Sources */,
+				2AA25FC925672017007005D8 /* main_options.cpp in Sources */,
+				2AA25FCA25672017007005D8 /* line_detector.cpp in Sources */,
+				2AA25FCB25672017007005D8 /* preprocessing.cpp in Sources */,
+				2AA25FCD25672017007005D8 /* feature_detectors.cpp in Sources */,
+				2AA25FAD256718B1007005D8 /* FLAppDelegate.m in Sources */,
+				2AA25FB0256718B1007005D8 /* FLImageUtilities.mm in Sources */,
+				2AA25F8A2567132D007005D8 /* MainView.swift in Sources */,
+				2AA25F882567132D007005D8 /* AppDelegate.swift in Sources */,
+				2AA25F9F256715EE007005D8 /* FeatureLabView.swift in Sources */,
+				2AA25FAE256718B1007005D8 /* FLViewController.mm in Sources */,
+				2AA25FCE25672017007005D8 /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A5955E820D2568F003A3E71 /* Main.storyboard */ = {
+		2A5955E820D2568F003A3E71 /* FeatureLab.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2A5955E920D2568F003A3E71 /* Base */,
+			);
+			name = FeatureLab.storyboard;
+			sourceTree = "<group>";
+		};
+		2AA25F902567132F007005D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA25F912567132F007005D8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -341,10 +380,6 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/usr/local/include/opencv4,
-				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -356,74 +391,72 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/usr/local/include/opencv4,
-				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		2A5955F020D2568F003A3E71 /* Debug */ = {
+		2AA25F952567132F007005D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = FeatureLab/FeatureLab.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = "Vision Playground/Vision_Playground.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = TX668CYG62;
+				DEVELOPMENT_ASSET_PATHS = "\"Vision Playground/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/usr/local/include/opencv4,
-				);
-				INFOPLIST_FILE = FeatureLab/Info.plist;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Vision Playground/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = fish.robo.FeatureLab;
-				PRODUCT_MODULE_NAME = FeatureLab;
-				PRODUCT_NAME = "Feature Lab";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "robo.fish.vision-playground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "FeatureLab/FeatureLab-Bridging-Header.h";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/Vision Playground/ObjC-to-Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		2A5955F120D2568F003A3E71 /* Release */ = {
+		2AA25F962567132F007005D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = FeatureLab/FeatureLab.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_ENTITLEMENTS = "Vision Playground/Vision_Playground.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = TX668CYG62;
+				DEVELOPMENT_ASSET_PATHS = "\"Vision Playground/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/usr/local/include/opencv4,
-				);
-				INFOPLIST_FILE = FeatureLab/Info.plist;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Vision Playground/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = fish.robo.FeatureLab;
-				PRODUCT_MODULE_NAME = FeatureLab;
-				PRODUCT_NAME = "Feature Lab";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "robo.fish.vision-playground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "FeatureLab/FeatureLab-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/Vision Playground/ObjC-to-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -478,7 +511,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/opencv4;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv4,
+					/usr/local/include,
+				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -531,7 +567,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/opencv4;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv4,
+					/usr/local/include,
+				);
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -550,11 +589,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2A5955EF20D2568F003A3E71 /* Build configuration list for PBXNativeTarget "FeatureLab" */ = {
+		2AA25F972567132F007005D8 /* Build configuration list for PBXNativeTarget "Vision Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A5955F020D2568F003A3E71 /* Debug */,
-				2A5955F120D2568F003A3E71 /* Release */,
+				2AA25F952567132F007005D8 /* Debug */,
+				2AA25F962567132F007005D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

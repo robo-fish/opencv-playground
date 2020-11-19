@@ -267,6 +267,11 @@ typedef NS_ENUM(NSInteger, FLKeyPointDetector)
   if (_cachedCGImage == nil && _image != nil)
   {
     _cachedCGImage = [FLImageUtilities createCGImageFromNSImage:_image];
+    if (_isRAWImage)
+    {
+      assert(CGImageGetWidth(_cachedCGImage) == _image.size.width);
+			assert(CGImageGetHeight(_cachedCGImage) == _image.size.height);
+		}
   }
   return _cachedCGImage;
 }
